@@ -1,0 +1,106 @@
+{
+  "name": "Klasse 9e",
+  "faecher": [
+    {
+      "name": "Mathe",
+      "lehrer": "Herr Hader"
+    },
+    {
+      "name": "Englisch",
+      "lehrer": "Herr Maier"
+    },
+    {
+      "name": "Deutsch",
+      "lehrer": "Frau Lenatz"
+    },
+    {
+      "name": "Ethik/ Religion",
+      "lehrer": "Unbekannt"
+    },
+    {
+      "name": "Latein/ Spanisch",
+      "lehrer": "Unbekannt"
+    },
+    {
+      "name": "Sozialkunde",
+      "lehrer": "Herr Brienschwitz"
+    },
+    {
+      "name": "Chemie",
+      "lehrer": "Herr Brünning"
+    },
+    {
+      "name": "Physik",
+      "lehrer": "Frau Schäfer"
+    },
+    {
+      "name": "Musik",
+      "lehrer": "Frau Spies"
+    },
+    {
+      "name": "Kunst",
+      "lehrer": "Frau Wicke-Freising"
+    },
+    {
+      "name": "Französisch",
+      "lehrer": "Frau Erard"
+    },
+    {
+      "name": "Geschichte",
+      "lehrer": "Frau Engel"
+    },
+    {
+      "name": "Informatik",
+      "lehrer": "Frau Molnar"
+    },
+    {
+      "name": "Sport",
+      "lehrer": "Herr Crepin"
+    }
+  ],
+  "times": [
+    {
+      "start": "7:50",
+      "end": "8:35"
+    },
+    {
+      "start": "8:40",
+      "end": "9:25"
+    },
+    {
+      "start": "9:40",
+      "end": "10:25"
+    },
+    {
+      "start": "10:30",
+      "end": "11:15"
+    },
+    {
+      "start": "11:30",
+      "end": "12:15"
+    },
+    {
+      "start": "12:20",
+      "end": "13:05"
+    },
+    {
+      "start": "13:05",
+      "end": "13:50"
+    },
+    {
+      "start": "13:50",
+      "end": "14:35"
+    },
+    {
+      "start": "14:35",
+      "end": "15:20"
+    }
+  ],
+  "plan": {
+      "montag": ["Mathe", "Englisch", "Musik", "Deutsch", "Sozialkunde", "Französisch", "Ethik/ Religion"],
+      "dienstag": ["Geschichte", "Französisch", "Mathe", "Chemie", "Physik", "Latein/ Spanisch", "Latein/ Spanisch"],
+      "mittwoch": ["Kunst", "Kunst", "Mathe", "Ethik/ Religion", "Englisch", "Physik", "", "Informatik", "Informatik"],
+      "donnerstag": ["Sozialkunde", "Chemie", "Geschichte", "Deutsch", "Französisch", "Musik", "Latein/ Spanisch"],
+      "freitag": ["Mathe", "Deutsch", "Sport", "Sport", "Geschichte", "Englisch"]
+  }
+}
