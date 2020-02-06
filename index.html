@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Stundenplan</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-  </head>
-  <body>
-    <nav>
-      <div class="title">Stundeplan <span id="stundenplanname"></span></div>
-    </nav>
-    <main>
-      <table id="stundenplan">
-          <caption id="stundenplanname"></caption>
-          <tr>
-              <th>Zeit/ Wochentag</th>
-              <th>Montag</th>
-              <th>Dienstag</th>
-              <th>Mittwoch</th>
-              <th>Donnerstag</th>
-              <th>Freitag</th>
-          </tr>
-      </table>
-    </main>
-    <footer>
-      <div class="selectStundenplan">
-          Stundenplan: 
-        <select id="stundenplanSelect" hidden>
-        </select>
-        <button>Neuen erstellen</button>
-      </div>
-      <div id="status">
-        
-      </div>
-    </footer>
-    <script src="./script/app.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Stundenplan</title>
+  <link href="https://fonts.googleapis.com/css?family=Cambay&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <div class="timetable">
+    <div class="header">
+      <div class="last"></div>
+      <span class="date">6. Februar</span>
+      <div class="next"></div>
+    </div>
+    <div class="main">
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+      <div class="subject"><span class="name">Mathe</span><span class="info">Herr Harder, Raum 103</span></div>
+
+    </div>
+  </div>
+  <nav>
+    <div class="back">
+    </div>
+    <span class="title">Klasse 9e</span>
+  </nav>
+</body>
+
 </html>
