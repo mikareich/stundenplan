@@ -8,25 +8,28 @@ body {
   background-size: contain;
   background-color: #99f5ff;
   height: 100%;
-}
-
-.title {
-  font-size: 30pt;
-  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav {
-  position: absolute;
-  bottom: 0;
   background-color: #1c5f8b;
   height: 50px;
   width: 100vw;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-}
-
-nav:hover {
-  opacity: 0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav > .back {
@@ -44,5 +47,90 @@ nav > .back:active {
   opacity: 0.7;
   background-color: white;
   background-image: url("../assets/arrow_back-24px--black.svg");
+}
+
+nav > .title {
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+}
+
+.timetable {
+  height: 100%;
+  position: relative;
+}
+
+.timetable > .header {
+  background-color: #1c5f8b;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15pt;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+.timetable > .header > .last,
+.timetable > .header .next {
+  background-image: url("../assets/arrow_back-24px--white.svg");
+  background-position: 8px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 40px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.timetable > .header > .last:active,
+.timetable > .header .next:active {
+  opacity: 0.7;
+  background-color: white;
+  background-image: url("../assets/arrow_back-24px--black.svg");
+}
+
+.timetable > .header > .next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.timetable > .main {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 5px;
+  overflow-y: scroll;
+  height: calc(100% - 60px);
+  position: absolute;
+  width: calc(100% - 10px);
+}
+
+.timetable > .main > .subject {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+}
+
+.timetable > .main > .subject > .name {
+  font-size: 14pt;
+  font-weight: bold;
+  width: 100%;
+}
+
+.timetable > .main > .subject > .info {
+  font-size: 10pt;
+  font-style: italic;
 }
 /*# sourceMappingURL=styles.css.map */
