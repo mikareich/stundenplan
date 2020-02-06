@@ -7,7 +7,7 @@
     },
     {
       "name": "Englisch",
-      "lehrer": "Herr Maier"
+      "lehrer": "Frau Bock"
     },
     {
       "name": "Deutsch",
@@ -34,8 +34,8 @@
       "lehrer": "Frau Schäfer"
     },
     {
-      "name": "Musik",
-      "lehrer": "Frau Spies"
+      "name": "Erdkune",
+      "lehrer": "Frau Warner"
     },
     {
       "name": "Kunst",
@@ -97,10 +97,10 @@
     }
   ],
   "plan": {
-      "montag": ["Mathe", "Englisch", "Musik", "Deutsch", "Sozialkunde", "Französisch", "Ethik/ Religion"],
-      "dienstag": ["Geschichte", "Französisch", "Mathe", "Chemie", "Physik", "Latein/ Spanisch", "Latein/ Spanisch"],
-      "mittwoch": ["Kunst", "Kunst", "Mathe", "Ethik/ Religion", "Englisch", "Physik", "", "Informatik", "Informatik"],
-      "donnerstag": ["Sozialkunde", "Chemie", "Geschichte", "Deutsch", "Französisch", "Musik", "Latein/ Spanisch"],
-      "freitag": ["Mathe", "Deutsch", "Sport", "Sport", "Geschichte", "Englisch"]
+      "monday": ["Englisch", "Chemie", "Sozialkunde", "Mathe", "Deutsch", "Französisch", "Ethik/ Religion"],
+      "tuesday": ["Erdkune", "Physik", "Mathe", "Geschichte", "Französisch", "Latein/ Spanisch", "Latein/ Spanisch"],
+      "wednesday": ["Kunst", "Kunst", "Mathe", "Deutsch", "Geschichte", "Englisch", "", "Informatik", "Informatik"],
+      "thursday": ["Sozialkunde", "Chemie", "Sport", "Sport", "Französisch", "Deutsch", "Latein/ Spanisch"],
+      "friday": ["Mathe", "Englisch", "Physik", "Geschichte", "Ethik/ Religion", "Erdkune"]
   }
 }
