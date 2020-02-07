@@ -1,61 +1,61 @@
 {
   "name": "Klasse 9e",
-  "faecher": [
+  "subjects": [
     {
       "name": "Mathe",
-      "lehrer": "Herr Hader"
+      "teacher": "Herr Hader"
     },
     {
       "name": "Englisch",
-      "lehrer": "Frau Bock"
+      "teacher": "Frau Bock"
     },
     {
       "name": "Deutsch",
-      "lehrer": "Frau Lenatz"
+      "teacher": "Frau Lenatz"
     },
     {
       "name": "Ethik/ Religion",
-      "lehrer": "Unbekannt"
+      "teacher": "Unbekannt"
     },
     {
       "name": "Latein/ Spanisch",
-      "lehrer": "Unbekannt"
+      "teacher": "Unbekannt"
     },
     {
       "name": "Sozialkunde",
-      "lehrer": "Herr Brienschwitz"
+      "teacher": "Herr Brienschwitz"
     },
     {
       "name": "Chemie",
-      "lehrer": "Herr Brünning"
+      "teacher": "Herr Brünning"
     },
     {
       "name": "Physik",
-      "lehrer": "Frau Schäfer"
+      "teacher": "Frau Schäfer"
     },
     {
       "name": "Erdkune",
-      "lehrer": "Frau Warner"
+      "teacher": "Frau Warner"
     },
     {
       "name": "Kunst",
-      "lehrer": "Frau Wicke-Freising"
+      "teacher": "Frau Wicke-Freising"
     },
     {
       "name": "Französisch",
-      "lehrer": "Frau Erard"
+      "teacher": "Frau Erard"
     },
     {
       "name": "Geschichte",
-      "lehrer": "Frau Engel"
+      "teacher": "Frau Engel"
     },
     {
       "name": "Informatik",
-      "lehrer": "Frau Molnar"
+      "teacher": "Frau Molnar"
     },
     {
       "name": "Sport",
-      "lehrer": "Herr Crepin"
+      "teacher": "Herr Crepin"
     }
   ],
   "times": [
@@ -99,7 +99,7 @@
   "plan": {
       "monday": ["Englisch", "Chemie", "Sozialkunde", "Mathe", "Deutsch", "Französisch", "Ethik/ Religion"],
       "tuesday": ["Erdkune", "Physik", "Mathe", "Geschichte", "Französisch", "Latein/ Spanisch", "Latein/ Spanisch"],
-      "wednesday": ["Kunst", "Kunst", "Mathe", "Deutsch", "Geschichte", "Englisch", "", "Informatik", "Informatik"],
+      "wednesday": ["Kunst", "Kunst", "Mathe", "Deutsch", "Geschichte", "Englisch", "Freistunde", "Informatik", "Informatik"],
       "thursday": ["Sozialkunde", "Chemie", "Sport", "Sport", "Französisch", "Deutsch", "Latein/ Spanisch"],
       "friday": ["Mathe", "Englisch", "Physik", "Geschichte", "Ethik/ Religion", "Erdkune"]
   }
