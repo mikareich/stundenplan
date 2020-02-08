@@ -22,7 +22,9 @@ function updateTimetable() {
     } else {
       // display subjects
       plan[1].forEach(subjectName => {
-        const teacher = timetable.subjects.find(s => s.name === subjectName)?.teacher || "";
+        const teacher = timetable.subjects.find(s => s.name === subjectName)
+          ? timetable.subjects.find(s => s.name === subjectName).teacher
+          : "";
         const subjectDIV = document.createElement("div");
         subjectDIV.classList.add("subject");
         subjectDIV.innerHTML = `<span class="name">${subjectName}</span>
@@ -35,11 +37,11 @@ function updateTimetable() {
 }
 updateTimetable();
 
-timetableHeaderDIV.querySelector(".last").addEventListener("click", function(){
-  date.setDate(date.getDate()-1)
-  updateTimetable()
-})
-timetableHeaderDIV.querySelector(".next").addEventListener("click", function(){
-  date.setDate(date.getDate()+1)
-  updateTimetable()
-})
+timetableHeaderDIV.querySelector(".last").addEventListener("click", function() {
+  date.setDate(date.getDate() - 1);
+  updateTimetable();
+});
+timetableHeaderDIV.querySelector(".next").addEventListener("click", function() {
+  date.setDate(date.getDate() + 1);
+  updateTimetable();
+});
