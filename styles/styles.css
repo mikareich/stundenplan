@@ -119,6 +119,11 @@ nav {
   font-style: italic;
 }
 
+.timetable > .main > .subject:not(.will),
+.timetable > .main .noAppointment:not(.will) {
+  opacity: 0.7;
+}
+
 .timetable > .main > .noAppointment {
   font-style: italic;
   font-style: 20pt;

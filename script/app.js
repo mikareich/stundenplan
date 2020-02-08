@@ -5,12 +5,16 @@ const timetableHeaderDIV = document.querySelector(".header");
 const loadTimetable = async name =>
   await (await fetch(`../timetables/${name}`)).json();
 let timetable = loadTimetable(timetableFilename);
-let date = new Date();
+let date = new Date(
+  "Sat Feb 05 2020 12:20:56 GMT+0100 (Central European Standard Time)"
+);
+console.log(date);
 function updateTimetable() {
   timetable.then(timetable => {
     // clear timetableDIv
     document.querySelectorAll(".subject").forEach(e => e.remove());
     const plan = Object.entries(timetable.plan)[date.getDay() - 1];
+    console.log(plan);
     // display used date
     timetableHeaderDIV.querySelector(
       ".date"
@@ -21,14 +25,42 @@ function updateTimetable() {
       noAppointmentDIV.hidden = false;
     } else {
       // display subjects
-      plan[1].forEach(subjectName => {
-        const teacher = timetable.subjects.find(s => s.name === subjectName)
-          ? timetable.subjects.find(s => s.name === subjectName).teacher
-          : "";
+      plan[1].forEach((subjectName, i) => {
+        // get informations
+        const { teacher, room } = timetable.subjects.find(
+          s => s.name === subjectName
+        )
+          ? timetable.subjects.find(s => s.name === subjectName)
+          : { teacher: "", room: "" };
+        const time = timetable.times[i];
         const subjectDIV = document.createElement("div");
+
+        const is = function() {
+          // set start time
+          let startTime = new Date(
+            date.setHours(time.start.slice(0, time.start.indexOf(":")))
+          ).setMinutes(
+            time.start.slice(time.start.indexOf(":") + 1, time.start.length)
+          );
+          // set end time
+          let endTime = new Date(
+            date.setHours(time.end.slice(0, time.end.indexOf(":")))
+          ).setMinutes(
+            time.end.slice(time.end.indexOf(":") + 1, time.end.length)
+          );
+          return (
+            new Date(
+              "Sat Feb 05 2020 12:20:56 GMT+0100 (Central European Standard Time)"
+            ).getTime() <= startTime
+          );
+        };
+        is() ? subjectDIV.classList.add("will") : "";
+        // display subject
         subjectDIV.classList.add("subject");
         subjectDIV.innerHTML = `<span class="name">${subjectName}</span>
-                                  <span class="info">${teacher}</span>`;
+                                  <span class="info">${time.start}, ${teacher}${
+          room === "Unbekannt" ? "" : `, Raum ${room}`
+        }</span>`;
         timetableMainDIV.appendChild(subjectDIV);
       });
       noAppointmentDIV.hidden = true;

@@ -83,6 +83,10 @@ nav {
         font-size: 10pt;
         font-style: italic;
       }
+      &:not(.will){
+        opacity: 0.7;
+      }
+
     }
     >.noAppointment{
       font-style: italic;

@@ -3,59 +3,73 @@
   "subjects": [
     {
       "name": "Mathe",
-      "teacher": "Herr Hader"
+      "teacher": "Herr Hader",
+      "room": 109
     },
     {
       "name": "Englisch",
-      "teacher": "Frau Bock"
+      "teacher": "Frau Bock",
+      "room": 109
     },
     {
       "name": "Deutsch",
-      "teacher": "Frau Lenatz"
+      "teacher": "Frau Lenatz",
+      "room": 109
     },
     {
       "name": "Ethik/ Religion",
-      "teacher": "Unbekannt"
+      "teacher": "Unbekannt",
+      "room": "Unbekannt"
     },
     {
       "name": "Latein/ Spanisch",
-      "teacher": "Unbekannt"
+      "teacher": "Unbekannt",
+      "room": "Unbekannt"
     },
     {
       "name": "Sozialkunde",
-      "teacher": "Herr Brienschwitz"
+      "teacher": "Herr Brienschwitz",
+      "room": 109
     },
     {
       "name": "Chemie",
-      "teacher": "Herr Brünning"
+      "teacher": "Herr Brünning",
+      "room": "Unbekannt"
     },
     {
       "name": "Physik",
-      "teacher": "Frau Schäfer"
+      "teacher": "Frau Schäfer",
+      "room": "Unbekannt"
     },
     {
-      "name": "Erdkune",
-      "teacher": "Frau Warner"
+      "name": "Erdkunde",
+      "teacher": "Frau Warner",
+      "room": 109
     },
     {
-      "name": "Kunst",
-      "teacher": "Frau Wicke-Freising"
+      "name": "Bildende Kunst",
+      "teacher": "Frau Wicke-Freising",
+      "room": 5
     },
     {
       "name": "Französisch",
-      "teacher": "Frau Erard"
+      "teacher": "Frau Erard",
+      "room": 109
     },
     {
       "name": "Geschichte",
-      "teacher": "Frau Engel"
+      "teacher": "Frau Engel",
+      "room": 109
     },
     {
       "name": "Informatik",
-      "teacher": "Frau Molnar"
+      "teacher": "Frau Molnar",
+      "room": 119
     },
     {
       "name": "Sport",
-      "teacher": "Herr Crepin"
+      "teacher": "Herr Crepin",
+      "room": "Babara Grundschule"
     }
   ],
   "times": [
@@ -98,9 +112,9 @@
   ],
   "plan": {
       "monday": ["Englisch", "Chemie", "Sozialkunde", "Mathe", "Deutsch", "Französisch", "Ethik/ Religion"],
-      "tuesday": ["Erdkune", "Physik", "Mathe", "Geschichte", "Französisch", "Latein/ Spanisch", "Latein/ Spanisch"],
+      "tuesday": ["Erdkunde", "Physik", "Mathe", "Geschichte", "Französisch", "Latein/ Spanisch", "Latein/ Spanisch"],
       "wednesday": ["Kunst", "Kunst", "Mathe", "Deutsch", "Geschichte", "Englisch", "Freistunde", "Informatik", "Informatik"],
       "thursday": ["Sozialkunde", "Chemie", "Sport", "Sport", "Französisch", "Deutsch", "Latein/ Spanisch"],
-      "friday": ["Mathe", "Englisch", "Physik", "Geschichte", "Ethik/ Religion", "Erdkune"]
+      "friday": ["Mathe", "Englisch", "Physik", "Geschichte", "Ethik/ Religion", "Erdkunde"]
   }
 }
