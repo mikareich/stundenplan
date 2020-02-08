@@ -5,16 +5,12 @@ const timetableHeaderDIV = document.querySelector(".header");
 const loadTimetable = async name =>
   await (await fetch(`../timetables/${name}`)).json();
 let timetable = loadTimetable(timetableFilename);
-let date = new Date(
-  "Sat Feb 05 2020 12:20:56 GMT+0100 (Central European Standard Time)"
-);
-console.log(date);
+let date = new Date();
 function updateTimetable() {
   timetable.then(timetable => {
     // clear timetableDIv
     document.querySelectorAll(".subject").forEach(e => e.remove());
     const plan = Object.entries(timetable.plan)[date.getDay() - 1];
-    console.log(plan);
     // display used date
     timetableHeaderDIV.querySelector(
       ".date"
@@ -48,11 +44,7 @@ function updateTimetable() {
           ).setMinutes(
             time.end.slice(time.end.indexOf(":") + 1, time.end.length)
           );
-          return (
-            new Date(
-              "Sat Feb 05 2020 12:20:56 GMT+0100 (Central European Standard Time)"
-            ).getTime() <= startTime
-          );
+          return new Date().getTime() <= startTime;
         };
         is() ? subjectDIV.classList.add("will") : "";
         // display subject
