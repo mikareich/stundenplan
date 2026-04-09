@@ -111,10 +111,51 @@
     }
   ],
   "plan": {
-      "monday": ["Englisch", "Chemie", "Sozialkunde", "Mathe", "Deutsch", "Französisch", "Ethik/ Religion"],
-      "tuesday": ["Erdkunde", "Physik", "Mathe", "Geschichte", "Französisch", "Latein/ Spanisch", "Latein/ Spanisch"],
-      "wednesday": ["Kunst", "Kunst", "Mathe", "Deutsch", "Geschichte", "Englisch", "Freistunde", "Informatik", "Informatik"],
-      "thursday": ["Sozialkunde", "Chemie", "Sport", "Sport", "Französisch", "Deutsch", "Latein/ Spanisch"],
-      "friday": ["Mathe", "Englisch", "Physik", "Geschichte", "Ethik/ Religion", "Erdkunde"]
+    "monday": [
+      "Englisch",
+      "Chemie",
+      "Sozialkunde",
+      "Mathe",
+      "Deutsch",
+      "Französisch",
+      "Ethik/ Religion"
+    ],
+    "tuesday": [
+      "Erdkunde",
+      "Physik",
+      "Mathe",
+      "Geschichte",
+      "Französisch",
+      "Latein/ Spanisch",
+      "Latein/ Spanisch"
+    ],
+    "wednesday": [
+      "Bildende Kunst",
+      "Bildende Kunst",
+      "Mathe",
+      "Deutsch",
+      "Geschichte",
+      "Englisch",
+      "Freistunde",
+      "Informatik",
+      "Informatik"
+    ],
+    "thursday": [
+      "Sozialkunde",
+      "Chemie",
+      "Sport",
+      "Sport",
+      "Französisch",
+      "Deutsch",
+      "Latein/ Spanisch"
+    ],
+    "friday": [
+      "Mathe",
+      "Englisch",
+      "Physik",
+      "Geschichte",
+      "Ethik/ Religion",
+      "Erdkunde"
+    ]
   }
 }
